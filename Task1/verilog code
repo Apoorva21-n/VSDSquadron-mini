@@ -1,1 +1,3 @@
-
+The module generates a signal using an internal clock (SB_HFOSC).
+The red, green, and blue LEDs are driven by various parts of a counter that grows with each clock cycle, causing them to blink. 
+The output of testing can be verified with the testwire.
