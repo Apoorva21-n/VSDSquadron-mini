@@ -6,3 +6,9 @@
 - hw_clk (oscillator clock) → Pin 20
 - testwire → Pin 17
 These pins match the RGB LED and oscillator on the VSDSquadron board.
+
+led_red	39 -Controls the Red LED on the board. Connected to counter[22] in the Verilog code, causing the Red LED to blink at a fixed rate.
+led_blue	40-Controls the Blue LED. Connected to counter[21], which makes the Blue LED blink at a slightly faster rate.
+led_green	41-Controls the Green LED. Driven by counter[23], blinking more slowly than the other two LEDs.
+hw_clk	20-Input clock signal. While the design uses an internal oscillator (SB_HFOSC), this pin is declared for flexibility and future use.
+testwire	17-Outputs the internal clock (clk) for debugging or verification using a logic analyzer or oscilloscope. Useful for development and testing.
