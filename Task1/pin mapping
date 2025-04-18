@@ -1,0 +1,8 @@
+## PCF File and Pin Mapping
+
+- led_red → Pin 39
+- led_blue → Pin 40
+- led_green → Pin 41
+- hw_clk (oscillator clock) → Pin 20
+- testwire → Pin 17
+These pins match the RGB LED and oscillator on the VSDSquadron board.
