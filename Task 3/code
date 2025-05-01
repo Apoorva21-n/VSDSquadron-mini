@@ -1,1 +1,9 @@
+The uart_tx_8n1 module transmits 8-bit data over UART with 1 start bit, 8 data bits, and 1 stop bit.
 
+It takes clk, txbyte, and senddata as inputs, and outputs tx (serial data) and txdone (transmission completion).
+
+A state machine controls the process, moving through IDLE, STARTTX, TXING, and TXDONE states.
+
+It sends the start bit, then serially transmits data bits, shifting the byte out bit by bit.
+
+After the data, it sends a stop bit and signals transmission completion with txdone.
