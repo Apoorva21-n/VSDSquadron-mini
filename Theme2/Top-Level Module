@@ -1,0 +1,25 @@
+module top (
+    input clk,              // System clock
+    input rx,               // UART RX input
+    output pwm_out         // PWM signal to drive the servo
+);
+
+    wire [7:0] angle;      // Desired angle for the servo
+    wire data_ready;       // Signal indicating data is ready from UART RX
+
+    // Instantiate UART receiver
+    uart_rx uart_receiver (
+        .clk(clk),
+        .rx(rx),
+        .data_out(angle),
+        .data_ready(data_ready)
+    );
+
+    // Instantiate PWM generator
+    pwm_gen pwm_controller (
+        .clk(clk),
+        .angle(angle),
+        .pwm_out(pwm_out)
+    );
+
+endmodule
