@@ -1,40 +1,37 @@
-# Makefile for FPGA Verilog project
+# Define project-specific variables
+TOP = top
+PCF_FILE = VSDSquadronFM
+BOARD_FREQ = 12
+CPU_FREQ = 20
+FPGA_VARIANT = up5k
+FPGA_PACKAGE = sg48
+VERILOG_FILE = top.v
 
-# Set your FPGA toolchain (e.g., Xilinx Vivado or Quartus)
-FPGA_TOOLCHAIN = vivado  # Change this if you're using a different toolchain
+# UART variables
+PICO_DEVICE = /dev/ttyUSB0
+BAUDS = 9600
 
-# Set the top-level module name (replace with your top module name)
-TOP_MODULE = top
-
-# Set the source files (Verilog files)
-SOURCES = uart_rx.v pwm_gen.v top.v
-
-# Set the constraints file for your FPGA (adjust as needed)
-CONSTRAINTS = your_constraints.pcf  # Replace with your actual PCF file
-
-# Set the output directory
-OUTPUT_DIR = build
-
-# Compiler flags for synthesis (adjust based on your toolchain)
-COMPILE_FLAGS = -sv
-
-# Create the target file
-TARGET = $(OUTPUT_DIR)/$(TOP_MODULE)
-
-# Rule to build the project
-all: build
-
+# Build rule
 build:
-    # Create the output directory
-    mkdir -p $(OUTPUT_DIR)
-    # Compile the Verilog files
-    $(FPGA_TOOLCHAIN) -f $(SOURCES) -o $(TARGET) $(COMPILE_FLAGS)
-    # (Add additional build commands for your FPGA toolchain)
+    yosys -DCPU_FREQ=$(CPU_FREQ) -q -p "synth_ice40 -abc9 -device $(FPGA_VARIANT) -dsp -top $(TOP) -json $(TOP).json" $(VERILOG_FILE)
+    nextpnr-ice40 --force --json $(TOP).json --pcf $(PCF_FILE).pcf --asc $(TOP).asc --freq $(BOARD_FREQ) --variant $(FPGA_VARIANT) --package $(FPGA_PACKAGE) --opt-timings -q
+    icetime -p $(PCF_FILE).pcf -P $(FPGA_PACKAGE) -r $(TOP).timings -d $(FPGA_VARIANT) -t $(TOP).asc
+    icepack -s $(TOP).asc $(TOP).bin
 
+# Flash rule
 flash:
-    # Command to flash the bitstream to the FPGA (adjust based on your toolchain)
-    sudo $(FPGA_TOOLCHAIN) flash $(TARGET)
+    iceprog $(TOP).bin
 
+# Clean rule
 clean:
-    # Clean the build files
-    rm -rf $(OUTPUT_DIR)
+    rm -rf $(TOP).blif $(TOP).asc $(TOP).bin $(TOP).json $(TOP).timings
+
+# Terminal rule
+terminal:
+    sudo picocom -b $(BAUDS) $(PICO_DEVICE) --imap lfcrlf,crcrlf --omap delbs,crlf --send-cmd "ascii -s -1 30 -n"
+
+# Cycle rule
+cycle:
+    git pull
+    make
+    sudo make flash
