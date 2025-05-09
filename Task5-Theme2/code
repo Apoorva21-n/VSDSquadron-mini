@@ -1,0 +1,33 @@
+module pwm_gen(
+    input clk,                  // System clock
+    input [7:0] angle,          // Servo angle (0-180)
+    output reg pwm_out          // PWM signal to drive servo
+);
+
+    reg [15:0] counter = 0;     // PWM counter
+    localparam MAX_COUNT = 20000;  // 20 ms period for 50 Hz PWM
+    localparam PULSE_WIDTH = 1000; // Start pulse width (1 ms for 0 degrees)
+
+    always @(posedge clk) begin
+        counter <= counter + 1;
+        if (counter >= MAX_COUNT)
+            counter <= 0;
+    end
+
+    always @(posedge clk) begin
+        if (counter < (PULSE_WIDTH + (angle * 10)))  // map 0-180 to 1-2ms
+            pwm_out <= 1;
+        else
+            pwm_out <= 0;
+    end
+endmodule
+
+This module generates a PWM signal to control a servo motor.
+
+It uses a clock to create a 20 ms (50 Hz) PWM frame.
+
+The pulse width is adjusted based on the angle input (0–180).
+
+Pulse width ranges from 1 ms (0°) to 2 ms (180°).
+
+The pwm_out signal drives the servo's control line to set its position.
