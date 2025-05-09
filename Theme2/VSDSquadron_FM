@@ -1,1 +1,6 @@
 
+# Clock input (typically onboard 100 MHz clock)
+set_io clk 35
+
+# PWM output connected to pin 25 (goes to servo signal pin)
+set_io pwm_out 25
