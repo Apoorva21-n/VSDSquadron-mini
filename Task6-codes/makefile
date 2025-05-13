@@ -1,6 +1,6 @@
 # define project-specific variables
 TOP=top
-PCF_FILE=VSDSquadron-mini
+PCF_FILE=VSDSquadron_FM
 BOARD_FREQ=12
 CPU_FREQ=20
 FPGA_VARIANT=up5k
