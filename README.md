@@ -84,3 +84,5 @@ Observed the RGB LED on the VSDSquadron board to verify that the expected behavi
 [ASC code](./Task1/Asc%20code)
 [Makefile](./Task1/Makefile)
 [Json code](./Task1/Json)
+# Step 4: Final documentation
+[video](./Task1/WhatsApp%20Video%202025-04-22%20at%2010.15.51%20PM.mp4).
