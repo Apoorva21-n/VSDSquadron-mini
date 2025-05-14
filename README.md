@@ -117,6 +117,7 @@ for this i have used docklight
 [video](./Task2/video)
 
 
+# Task3:Develop a UART transmitter module capable of sending serial data from the FPGA to an external device
 
 
 
