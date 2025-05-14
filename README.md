@@ -69,3 +69,17 @@ testwire (Pin 17):
 Pin 17 is mapped to the testwire, which could be used for debugging or testing purposes, such as checking signal states or observing specific values during development.
 # Step 3: Integrating with the VSDSquadron FPGA Mini Board
 
+Reviewed the VSDSquadron FPGA Mini board datasheet to understand its hardware features, pin configuration, and general operation.
+
+Mapped physical board connections based on the datasheet, and created a corresponding PCF (Physical Constraints File) that matches the Verilog code. This ensured correct mapping of signals like led_red, led_blue, led_green, hw_clk, and testwire to their respective FPGA pins.
+
+Connected the FPGA board to the computer using a USB-C cable, ensuring that the FTDI interface was properly recognized for communication and flashing.
+Ran make clean to remove any previous build artifacts.
+
+Ran make build to compile the Verilog design successfully.
+
+Used sudo make flash to program the FPGA.
+
+Observed the RGB LED on the VSDSquadron board to verify that the expected behavior was achieved, confirming successful programming of the FPGA.
+[ASC code](./Task1/asc%20code)
+[Makefile](./Task1/json)
