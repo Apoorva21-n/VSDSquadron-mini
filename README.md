@@ -9,7 +9,7 @@ This project aims to understand and implement Verilog code on the [VSDSquadron F
 # Step 1: Understanding the Verilog Code
 This task involves analyzing the Verilog design, mapping pins, and flashing the code to the VSDSquadron FPGA Mini board.
 📜 [Verilog Code](./Task1/verilog%20code)
-## Verilog Code Summary
+# Verilog Code Summary
 - The module generates a signal using an internal clock (SB_HFOSC).
 - The top module controls an RGB LED using internal logic.
 - It uses an internal oscillator (SB_HFOSC) to create a clock.
@@ -87,3 +87,28 @@ Observed the RGB LED on the VSDSquadron board to verify that the expected behavi
 # Step 4: Final documentation
 [video](./Task1/WhatsApp%20Video%202025-04-22%20at%2010.15.51%20PM.mp4).
 led remains blinking 
+
+## Task 2:Implement a UART loopback mechanism
+# Objective: 
+Implement a UART loopback mechanism where transmitted data is immediately received back, facilitating testing of UART functionality.
+# Step 1:Study the Existing Code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
