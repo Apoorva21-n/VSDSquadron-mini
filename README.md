@@ -84,20 +84,20 @@ Observed the RGB LED on the VSDSquadron board to verify that the expected behavi
 [ASC code](./Task1/Asc%20code)
 [Makefile](./Task1/Makefile)
 [Json code](./Task1/Json)
-# Step 4: Final documentation
+## Step 4: Final documentation
 [video](./Task1/WhatsApp%20Video%202025-04-22%20at%2010.15.51%20PM.mp4).
 led remains blinking 
 
-## Task 2:Implement a UART loopback mechanism
-# Objective: 
+# Task 2:Implement a UART loopback mechanism
+## Objective: 
 Implement a UART loopback mechanism where transmitted data is immediately received back, facilitating testing of UART functionality.
-# Step 1:Study the Existing Code
+## Step 1:Study the Existing Code
 The project implements a basic UART loopback system using three Verilog modules: uart_rx, uart_tx, and uart_loopback_top. The uart_rx module receives serial data from the PC, converts it into 8-bit parallel format, and raises a rx_done_tick signal upon successful reception. The top module, uart_loopback_top, connects the received byte (rx_dout) directly to the uart_tx module, which transmits it back to the PC through the tx_o line. This setup enables 8N1 UART communication, effectively echoing any character sent from the PC terminal.
 [code](./Task2/code)
-# Step 2:Design Documentation
+## Step 2:Design Documentation
 here is the block diagram 
  [block diagram](./Task2/block%20diagram)
- # Step 3:Implementation
+ ## Step 3:Implementation
 [Makefile](./Task2/Makefile)
  [Top module](./Task2/Top%20Module)
   [uart pcf](./Task2/uart%20pcf)
@@ -106,13 +106,13 @@ cd
 cd VSDSquadron-mini
 (then choose the folder which contains the following files )
 then make build and sudo make flash 
-# step4:Testing and Verification
+## step4:Testing and Verification
 
 for this i have used docklight
 [docklight](./Task2/docklight)
 [terminal](./Task2/terminal)
 [result](./Task2/result)
-# step4:Documentation
+## step4:Documentation
 [result](./Task2/result)
 [video](./Task2/video)
 
