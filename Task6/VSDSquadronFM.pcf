@@ -1,0 +1,6 @@
+set_io TRIG 23
+set_io ECHO 21
+set_io BUZZER 18
+set_io SDA 17
+set_io SCL 15
+set_io UART_TX 12
