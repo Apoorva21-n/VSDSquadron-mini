@@ -118,10 +118,22 @@ for this i have used docklight
 
 
 # Task3:Develop a UART transmitter module capable of sending serial data from the FPGA to an external device
+## step1:Study the Existing Code
+[code](./Task3/code)
+
+## step2:Design Documentation
+[blockdiagram](./Task3/blockdiagram)
+[cktdiagram](./Task3/cktdiagram)
+
+## step3:Implementation
+
+cd uart _transmisission
+make build
+sudo make flash 
+## step4:Testing and Verification
 
 
-
-
+## step5: Documentation
 
 
 
