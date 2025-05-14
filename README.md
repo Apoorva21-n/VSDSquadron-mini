@@ -82,4 +82,5 @@ Used sudo make flash to program the FPGA.
 
 Observed the RGB LED on the VSDSquadron board to verify that the expected behavior was achieved, confirming successful programming of the FPGA.
 [ASC code](./Task1/asc%20code)
-[Makefile](./Task1/json)
+[Makefile](./Task1/Makefile)
+[Json code](./Task1/Json)
