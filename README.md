@@ -106,9 +106,15 @@ cd
 cd VSDSquadron-mini
 (then choose the folder which contains the following files )
 then make build and sudo make flash 
+# step4:Testing and Verification
 
-
-
+for this i have used docklight
+[docklight](./Task2/docklight)
+[terminal](./Task2/terminal)
+[result](./Task2/result)
+# step4:Documentation
+[result](./Task2/result)
+[video](./Task2/video)
 
 
 
