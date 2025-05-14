@@ -92,10 +92,13 @@ led remains blinking
 # Objective: 
 Implement a UART loopback mechanism where transmitted data is immediately received back, facilitating testing of UART functionality.
 # Step 1:Study the Existing Code
-
-
-
-
+The project implements a basic UART loopback system using three Verilog modules: uart_rx, uart_tx, and uart_loopback_top. The uart_rx module receives serial data from the PC, converts it into 8-bit parallel format, and raises a rx_done_tick signal upon successful reception. The top module, uart_loopback_top, connects the received byte (rx_dout) directly to the uart_tx module, which transmits it back to the PC through the tx_o line. This setup enables 8N1 UART communication, effectively echoing any character sent from the PC terminal.
+[code](./Task2/code)
+# Step 2:Design Documentation
+here is the block diagram 
+ [block diagram](./Task2/block%20diagram)
+ # Step 3:Implementation
+ 
 
 
 
