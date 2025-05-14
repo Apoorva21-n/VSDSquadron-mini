@@ -136,11 +136,11 @@ sudo make flash
 ## step4:Testing and Verification
 open and install putty
 check whether u get series of d
-[putty terminal](./Task2/putty%20terminal)
+[putty terminal](./Task3/putty%20terminal)
 [video1.mp4](./Task3/video1.mp4)
 ## step5: Documentation
 [blockdiagram](./Task3/blockdiagram)
 [cktdiagram](./Task3/cktdiagram)
-[putty terminal](./Task2/putty%20terminal)
+[putty terminal](./Task3/putty%20terminal)
 [video1.mp4](./Task3/video1.mp4)
 [transmitted](./Task3/transmitted)
