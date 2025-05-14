@@ -45,3 +45,6 @@ Connections: Each color output is connected to its respective LED pin (led_red, 
 
 📌 Summary
 This module provides a self-contained setup to control RGB LEDs using an internal clock and a counter. It keeps the blue LED on while offering a simple way to verify internal timing using a test pin. It’s optimized for easy integration on FPGA boards without extra components.
+# Step 2: Creating the PCF File
+
+- 📌 [Pin Mapping](./Task1/pin%20mapping)
