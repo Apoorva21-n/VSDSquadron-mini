@@ -6,10 +6,10 @@ Name:Apoorva Nagekar
 
 This project aims to understand and implement Verilog code on the [VSDSquadron FPGA Mini Board](https://www.vlsisystemdesign.com/vsdsquadron/). The primary tasks include reviewing and documenting Verilog code, creating a PCF (Pin Constraint File), and integrating the design onto the hardware using the provided datasheet.
 
-# Step 1: Understanding the Verilog Code
+## Step 1: Understanding the Verilog Code
 This task involves analyzing the Verilog design, mapping pins, and flashing the code to the VSDSquadron FPGA Mini board.
 📜 [Verilog Code](./Task1/verilog%20code)
-# Verilog Code Summary
+## Verilog Code Summary
 - The module generates a signal using an internal clock (SB_HFOSC).
 - The top module controls an RGB LED using internal logic.
 - It uses an internal oscillator (SB_HFOSC) to create a clock.
@@ -17,7 +17,7 @@ This task involves analyzing the Verilog design, mapping pins, and flashing the 
 - LED output colors are toggled based on counter bits.
 - The red, green, and blue LEDs are driven by various parts of a counter that grows with each clock cycle, causing them to blink. 
 - testwire is used to check/debug signal behavior.
-# Internal Module Breakdown 
+## Internal Module Breakdown 
 1. Built-in Oscillator (SB_HFOSC)
 Role: Generates a clock signal without needing an external source.
 
@@ -45,7 +45,7 @@ Connections: Each color output is connected to its respective LED pin (led_red, 
 
 📌 Summary
 This module provides a self-contained setup to control RGB LEDs using an internal clock and a counter. It keeps the blue LED on while offering a simple way to verify internal timing using a test pin. It’s optimized for easy integration on FPGA boards without extra components.
-# Step 2: Creating the PCF File
+## Step 2: Creating the PCF File
 
 - 📌 [Pin Mapping](./Task1/pin%20mapping)
 - led_red (Pin 39):
@@ -67,7 +67,7 @@ Pin 20 is assigned to the hardware clock, which is crucial for time-based operat
 testwire (Pin 17):
 
 Pin 17 is mapped to the testwire, which could be used for debugging or testing purposes, such as checking signal states or observing specific values during development.
-# Step 3: Integrating with the VSDSquadron FPGA Mini Board
+## Step 3: Integrating with the VSDSquadron FPGA Mini Board
 
 Reviewed the VSDSquadron FPGA Mini board datasheet to understand its hardware features, pin configuration, and general operation.
 
