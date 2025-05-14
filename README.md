@@ -118,6 +118,7 @@ for this i have used docklight
 
 
 # Task3:Develop a UART transmitter module capable of sending serial data from the FPGA to an external device
+
 ## step1:Study the Existing Code
 [code](./Task3/code)
 
@@ -126,14 +127,20 @@ for this i have used docklight
 [cktdiagram](./Task3/cktdiagram)
 
 ## step3:Implementation
-
-cd uart _transmisission
+[Makefile](./Task3/Makefile)
+[top](./Task3/top)
+[uart_tx](./Task3/uart_tx)
+cd uart _transmission
 make build
 sudo make flash 
 ## step4:Testing and Verification
-
-
+open and install putty
+check whether u get series of d
+[putty terminal](./Task2/putty%20terminal)
+[video1.mp4](./Task3/video1.mp4)
 ## step5: Documentation
-
-
-
+[blockdiagram](./Task3/blockdiagram)
+[cktdiagram](./Task3/cktdiagram)
+[putty terminal](./Task2/putty%20terminal)
+[video1.mp4](./Task3/video1.mp4)
+[transmitted](./Task3/transmitted)
