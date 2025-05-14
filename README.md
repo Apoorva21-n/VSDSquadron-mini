@@ -48,3 +48,24 @@ This module provides a self-contained setup to control RGB LEDs using an interna
 # Step 2: Creating the PCF File
 
 - 📌 [Pin Mapping](./Task1/pin%20mapping)
+- led_red (Pin 39):
+
+This pin is assigned to control the red LED on the FPGA board. The red LED might indicate an error state, status, or be used for any specific condition in your system.
+
+led_blue (Pin 40):
+
+Pin 40 is assigned to the blue LED. You could use this LED for indicating a different status or condition, such as a system active state or any debugging process.
+
+led_green (Pin 41):
+
+This pin is connected to the green LED, which could signal a positive state, such as successful completion of an operation or system readiness.
+
+hw_clk (Pin 20):
+
+Pin 20 is assigned to the hardware clock, which is crucial for time-based operations and synchronization. Typically, this would come from an external oscillator or a clock generator that provides timing for other components in your system, including communication or sensor timing.
+
+testwire (Pin 17):
+
+Pin 17 is mapped to the testwire, which could be used for debugging or testing purposes, such as checking signal states or observing specific values during development.
+# Step 3: Integrating with the VSDSquadron FPGA Mini Board
+
