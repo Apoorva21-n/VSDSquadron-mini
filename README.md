@@ -98,10 +98,14 @@ The project implements a basic UART loopback system using three Verilog modules:
 here is the block diagram 
  [block diagram](./Task2/block%20diagram)
  # Step 3:Implementation
-
-
-
-
+[Makefile](./Task2/Makefile)
+ [Top module](./Task2/Top%20Module)
+  [uart pcf](./Task2/uart%20pcf)
+Then go to terminal 
+cd
+cd VSDSquadron-mini
+(then choose the folder which contains the following files )
+then make build and sudo make flash 
 
 
 
