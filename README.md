@@ -98,7 +98,6 @@ The project implements a basic UART loopback system using three Verilog modules:
 here is the block diagram 
  [block diagram](./Task2/block%20diagram)
  # Step 3:Implementation
- 
 
 
 
