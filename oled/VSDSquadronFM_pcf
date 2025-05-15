@@ -1,0 +1,3 @@
+set_io clk 35
+set_io oled_scl 42
+set_io oled_sda 43
