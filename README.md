@@ -99,7 +99,7 @@ here is the block diagram
  [block diagram](./Task2/block%20diagram.jpeg)
  ## Step 3:Implementation
 [Makefile](./Task2/Makefile)
- [Top module](./Task2/Top%20Module)
+ [Top module](./Task2/Top%20module)
   [uart pcf](./Task2/uart%20pcf)
 Then go to terminal 
 cd
@@ -109,7 +109,7 @@ then make build and sudo make flash
 ## step4:Testing and Verification
 
 for this i have used docklight
-[docklight](./Task2/docklight.jpeg)
+[docklight](./Task2/docklight%20.jpeg)
 [terminal](./Task2/terminal.jpeg)
 [result](./Task2/result.jpeg)
 ## step4:Documentation
