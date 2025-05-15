@@ -277,7 +277,7 @@ The FPGA receives input commands from the DOCKLIGHT terminal software.
 As data is transmitted via UART, the display updates by incrementing the shown number with each received command.
 [Makefile](./Task6/Makefile)
 [top.v](./Task6/top.v)
-[uart_rx](./Task6/uart_rx)
+[uart_rx](./Task6/uart_rx.v)
 [seven_seg_decoder](./Task6/seven_seg_decoder.v)
 [pcf file ](./Task6/constraints.pcf)
 Implementation
