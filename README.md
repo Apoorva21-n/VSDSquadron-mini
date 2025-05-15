@@ -144,3 +144,95 @@ check whether u get series of d
 [putty terminal](./Task3/putty%20terminal)
 [video1.mp4](./Task3/video1.mp4)
 [transmitted](./Task3/transmitted)
+
+
+## Task5:Theme 1: FPGA-Based UART-Controlled Display System
+# Project Summary
+This project is centered around creating a system that captures serial data in real time through UART communication and displays it on an output module like a 7-segment display or an LCD. The design will be implemented on an FPGA, with the primary goals being robust UART data reception, efficient decoding of the input, and real-time display updates.
+
+# Goals
+Develop UART receiver logic (receive-only) using the FPGA.
+
+Convert ASCII or hexadecimal input into a form suitable for display.
+
+Control a 7-segment display or an LCD module to reflect received data.
+
+Optionally develop a user interface on a PC for testing and interaction.
+
+Ensure real-time responsiveness and accuracy in data display.
+
+# System Components
+Hardware: VSDSquadron FPGA Mini board, 7-segment display or LCD.
+
+# Software: Ubuntu OS, Docklight terminal tool.
+
+# System Architecture
+The core components of the design include:
+
+A UART receiver to collect serial data.
+
+A decoder that translates received characters into display-ready values.
+
+A display driver that updates the output module in real time.
+
+The design process begins with defining communication parameters—such as baud rate, data frame (typically 8 bits, no parity, 1 stop bit)—and choosing between a 7-segment or LCD display. The main modules are then developed in a pipeline structure, ensuring smooth data flow from reception to visualization.
+
+# Development Workflow
+UART Module Creation:
+A Verilog or VHDL-based UART receiver is created to capture serial input from a computer or microcontroller. This involves precise timing for identifying the start bit, sampling each bit correctly, and assembling the received byte.
+
+Simulation & Testing:
+A testbench simulates the UART input stream, using characters like '0' to '9' to verify functionality. The output is checked to confirm the data is stored properly in a register.
+
+Decoding Logic:
+The received byte, often in ASCII, is translated into binary digits or directly mapped to the segment control signals. This step prepares the data for the display module.
+
+Display Controller Implementation:
+Logic is written to control the display—either through combinational logic or a simple FSM. This controller ensures that the display reflects the received data in real time.
+
+Integration and Deployment:
+All components are combined in a top-level module and loaded onto the FPGA. A USB-to-Serial interface enables communication with a PC, which sends data via a serial terminal like Docklight. Correct real-time display is confirmed through hardware testing.
+
+## Theme 2: UART-Controlled Actuator System Using FPGA
+# Project Summary
+This project involves creating a system that receives control inputs over UART and triggers actuators like LEDs, motors, or relays through GPIO outputs on an FPGA. The goal is to interpret simple command strings from a serial terminal and use them to activate or deactivate physical components.
+
+# Goals
+Implement a UART receiver module on the FPGA.
+
+Identify and parse command strings such as "LED ON" or "MOTOR OFF".
+
+Design a finite state machine (FSM) to generate control signals from parsed commands.
+
+Connect and test output devices like LEDs, relays, and motors.
+
+Allow interactive command execution through a serial terminal interface.
+
+# System Components
+Hardware: VSDSquadron FPGA Mini, relay or motor modules, LED indicators, FTDI USB-to-Serial converter, breadboard and jumper wires.
+
+Software: Ubuntu operating system, Docklight for UART communication.
+
+# System Architecture
+The architecture includes:
+
+A UART receiver for collecting input data.
+
+A command parser to identify valid control commands.
+
+A control logic block that triggers GPIO signals based on recognized commands.
+
+Output connections to various actuators.
+
+# Development Workflow
+Initial Setup and Testing:
+The FPGA board is tested with a simple LED blinking program to confirm correct power supply, programming, and GPIO mapping. This acts as a baseline hardware check.
+
+UART Receiver Development:
+A UART module is developed to detect the start of transmission, read in each bit correctly, and assemble full 8-bit characters. Careful configuration of timing parameters like baud rate is essential here. After simulation validation, this module is tested live using a PC terminal application.
+
+Command Parsing Logic:
+A character buffer or simple FIFO is used to accumulate incoming bytes. A pattern-matching logic or FSM is created to detect specific command sequences such as "LED ON" or "RELAY OFF." Each matched string is assigned a control opcode or signal.
+
+Control and Output Logic:
+Based on the decoded commands, the system activates or deactivates the connected output devices. Each command results in a change in the output GPIO lines, effectively controlling the physical components in real time.
