@@ -123,12 +123,12 @@ for this i have used docklight
 [code](./Task3/code)
 
 ## step2:Design Documentation
-[blockdiagram](./Task3/blockdiagram)
-[cktdiagram](./Task3/cktdiagram)
+[blockdiagram](./Task3/blockdiagram.jpeg)
+[cktdiagram](./Task3/cktdiagram.jpeg)
 
 ## step3:Implementation
 [Makefile](./Task3/Makefile)
-[top](./Task3/top)
+[top](./Task3/top.v)
 [uart_tx](./Task3/uart_tx)
 cd uart _transmission
 make build
@@ -136,14 +136,14 @@ sudo make flash
 ## step4:Testing and Verification
 open and install putty
 check whether u get series of d
-[putty terminal](./Task%203/putty%20terminal)
+[putty terminal](./Task%203/putty%20terminal.jpeg)
 [video1.mp4](./Task3/video1.mp4)
 ## step5: Documentation
-[blockdiagram](./Task3/blockdiagram)
-[cktdiagram](./Task3/cktdiagram)
-[putty terminal](./Task3/putty%20terminal)
+[blockdiagram](./Task3/blockdiagram.jpeg)
+[cktdiagram](./Task3/cktdiagram.jpeg)
+[putty terminal](./Task3/putty%20terminal.jpeg)
 [video1.mp4](./Task3/video1.mp4)
-[transmitted](./Task3/transmitted)
+[transmitted](./Task3/transmitted.jpeg)
 
 ## Task4:
 
