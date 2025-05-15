@@ -168,7 +168,7 @@ IoT edge devices
 [ckt](./Task4/ckt.jpeg)
 ### result
 [output](./Task4/outputjpeg)
-[video](./Task3/video2.mp4)
+[video](./Task4/video2.mp4)
 
 # Task5:Theme 1: FPGA-Based UART-Controlled Display System
 ### Project Summary
