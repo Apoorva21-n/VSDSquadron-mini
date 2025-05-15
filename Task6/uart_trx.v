@@ -1,4 +1,4 @@
-module uart_rx_8n1 (
+module uart_rx (
     input clk,
     input rx,
     output reg [7:0] rxbyte = 0,
