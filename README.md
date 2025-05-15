@@ -145,6 +145,7 @@ check whether u get series of d
 [video1.mp4](./Task3/video1.mp4)
 [transmitted](./Task3/transmitted)
 
+## Task4:
 
 ### Task5:Theme 1: FPGA-Based UART-Controlled Display System
 # Project Summary
@@ -236,3 +237,4 @@ A character buffer or simple FIFO is used to accumulate incoming bytes. A patter
 
 Control and Output Logic:
 Based on the decoded commands, the system activates or deactivates the connected output devices. Each command results in a change in the output GPIO lines, effectively controlling the physical components in real time.
+
