@@ -83,7 +83,7 @@ Used sudo make flash to program the FPGA.
 Observed the RGB LED on the VSDSquadron board to verify that the expected behavior was achieved, confirming successful programming of the FPGA.
 [ASC code](./Task1/Asc%20code)
 [Makefile](./Task1/Makefile)
-[Json code](./Task1/Json)
+[Json code](./Task1/json)
 ## Step 4: Final documentation
 [video](./Task1/WhatsApp%20Video%202025-04-22%20at%2010.15.51%20PM.mp4).
 led remains blinking 
@@ -96,7 +96,7 @@ The project implements a basic UART loopback system using three Verilog modules:
 [code](./Task2/code)
 ## Step 2:Design Documentation
 here is the block diagram 
- [block diagram](./Task2/block%20diagram)
+ [block diagram](./Task2/block%20diagram.jpeg)
  ## Step 3:Implementation
 [Makefile](./Task2/Makefile)
  [Top module](./Task2/Top%20Module)
