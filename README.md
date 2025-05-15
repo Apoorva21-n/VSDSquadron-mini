@@ -109,12 +109,12 @@ then make build and sudo make flash
 ## step4:Testing and Verification
 
 for this i have used docklight
-[docklight](./Task2/docklight)
-[terminal](./Task2/terminal)
-[result](./Task2/result)
+[docklight](./Task2/docklight.jpeg)
+[terminal](./Task2/terminal.jpeg)
+[result](./Task2/result.jpeg)
 ## step4:Documentation
-[result](./Task2/result)
-[video](./Task2/video)
+[result](./Task2/result.jpeg)
+[video](./Task2/video.mp4)
 
 
 # Task3:Develop a UART transmitter module capable of sending serial data from the FPGA to an external device
