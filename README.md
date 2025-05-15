@@ -238,3 +238,19 @@ A character buffer or simple FIFO is used to accumulate incoming bytes. A patter
 Control and Output Logic:
 Based on the decoded commands, the system activates or deactivates the connected output devices. Each command results in a change in the output GPIO lines, effectively controlling the physical components in real time.
 
+## Task6:FPGA-Based UART-Controlled Actuator System
+# Overview:
+Design a solution in which the FPGA interprets UART-based control inputs to manage LED operation. The focus is on decoding serial inputs into direct hardware responses.
+
+# Working:
+Three separate LEDs are controlled based on UART instructions.
+Commands are issued using DOCKLIGHT.
+Upon receiving each command through UART, the FPGA activates the LEDs sequentially — each command turns on a different LED in order.
+
+## FPGA-Based UART-Controlled Display System
+# Overview:
+Create a system where the FPGA accepts data through a UART interface and outputs it on a display device such as a 7-segment or LCD screen. The project highlights the ability to capture and visualize data in real-time.
+# Working:
+A 7-segment display is interfaced with the FPGA board.
+The FPGA receives input commands from the DOCKLIGHT terminal software.
+As data is transmitted via UART, the display updates by incrementing the shown number with each received command.
