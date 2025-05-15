@@ -157,12 +157,18 @@ A sensor interface module that reads data from the connected sensor.
 A UART transmitter module that serializes the sensor data and transmits it asynchronously.
 An optional baud rate generator to ensure accurate UART timing.
 Once the system is programmed onto the FPGA, real-time sensor data is continuously or conditionally transmitted to an external device such as a PC, where it can be viewed using terminal software (e.g., Docklight or PuTTY).
-
+[code](./Task4/code)
+[putty](./Task4/putty%20terminal1.jpeg)
  ## Applications
 Real-time environmental monitoring (temperature, humidity, etc.)
 Industrial sensor networks
 Data logging systems
 IoT edge devices
+[blockdiagram](./Task4/blockdiagram1.jpeg)
+[ckt](./Task4/ckt.jpeg)
+## result
+[output](./Task4/outputjpeg)
+[video](./Task3/video2.mp4)
 
 ### Task5:Theme 1: FPGA-Based UART-Controlled Display System
 ## Project Summary
