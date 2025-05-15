@@ -145,49 +145,49 @@ check whether u get series of d
 [video1.mp4](./Task3/video1.mp4)
 [transmitted](./Task3/transmitted.jpeg)
 
-## Task4: UART-Based Sensor Data Transmission Using FPGA
+# Task4: UART-Based Sensor Data Transmission Using FPGA
 
 In this project, the UART transmitter is implemented on an FPGA to send real-time sensor data to an external device, such as a PC. The objective is to interface a sensor with the FPGA and transmit the acquired data serially over UART. This allows for remote monitoring or further processing of sensor data on external systems.
 
-# Working Principle
+## Working Principle
 The FPGA reads input from a sensor connected to its GPIO pins. Based on the sensor’s response (e.g., analog-to-digital conversion or digital signals), the data is formatted into an 8-bit frame suitable for UART transmission.
 
-# The Verilog implementation includes:
+## The Verilog implementation includes:
 A sensor interface module that reads data from the connected sensor.
 A UART transmitter module that serializes the sensor data and transmits it asynchronously.
 An optional baud rate generator to ensure accurate UART timing.
 Once the system is programmed onto the FPGA, real-time sensor data is continuously or conditionally transmitted to an external device such as a PC, where it can be viewed using terminal software (e.g., Docklight or PuTTY).
 
- # Applications
+ ## Applications
 Real-time environmental monitoring (temperature, humidity, etc.)
 Industrial sensor networks
 Data logging systems
 IoT edge devices
 
 ### Task5:Theme 1: FPGA-Based UART-Controlled Display System
-# Project Summary
+## Project Summary
 This project is centered around creating a system that captures serial data in real time through UART communication and displays it on an output module like a 7-segment display or an LCD. The design will be implemented on an FPGA, with the primary goals being robust UART data reception, efficient decoding of the input, and real-time display updates.
 
-# Goals
+## Goals
 Develop UART receiver logic (receive-only) using the FPGA.
 Convert ASCII or hexadecimal input into a form suitable for display.
 Control a 7-segment display or an LCD module to reflect received data.
 Optionally develop a user interface on a PC for testing and interaction.
 Ensure real-time responsiveness and accuracy in data display.
 
-# System Components
+## System Components
 Hardware: VSDSquadron FPGA Mini board, 7-segment display or LCD.
 
-# Software: Ubuntu OS, Docklight terminal tool.
+## Software: Ubuntu OS, Docklight terminal tool.
 
-# System Architecture
+## System Architecture
 The core components of the design include:
 A UART receiver to collect serial data.
 A decoder that translates received characters into display-ready values.
 A display driver that updates the output module in real time.
 The design process begins with defining communication parameters—such as baud rate, data frame (typically 8 bits, no parity, 1 stop bit)—and choosing between a 7-segment or LCD display. The main modules are then developed in a pipeline structure, ensuring smooth data flow from reception to visualization.
 
-# Development Workflow
+## Development Workflow
 UART Module Creation:
 A Verilog or VHDL-based UART receiver is created to capture serial input from a computer or microcontroller. This involves precise timing for identifying the start bit, sampling each bit correctly, and assembling the received byte.
 
@@ -203,11 +203,11 @@ Logic is written to control the display—either through combinational logic or 
 Integration and Deployment:
 All components are combined in a top-level module and loaded onto the FPGA. A USB-to-Serial interface enables communication with a PC, which sends data via a serial terminal like Docklight. Correct real-time display is confirmed through hardware testing.
 
-## Theme 2: UART-Controlled Actuator System Using FPGA
-# Project Summary
+# Theme 2: UART-Controlled Actuator System Using FPGA
+## Project Summary
 This project involves creating a system that receives control inputs over UART and triggers actuators like LEDs, motors, or relays through GPIO outputs on an FPGA. The goal is to interpret simple command strings from a serial terminal and use them to activate or deactivate physical components.
 
-# Goals
+## Goals
 Implement a UART receiver module on the FPGA.
 
 Identify and parse command strings such as "LED ON" or "MOTOR OFF".
@@ -218,12 +218,12 @@ Connect and test output devices like LEDs, relays, and motors.
 
 Allow interactive command execution through a serial terminal interface.
 
-# System Components
+## System Components
 Hardware: VSDSquadron FPGA Mini, relay or motor modules, LED indicators, FTDI USB-to-Serial converter, breadboard and jumper wires.
 
 Software: Ubuntu operating system, Docklight for UART communication.
 
-# System Architecture
+## System Architecture
 The architecture includes:
 
 A UART receiver for collecting input data.
@@ -234,7 +234,7 @@ A control logic block that triggers GPIO signals based on recognized commands.
 
 Output connections to various actuators.
 
-# Development Workflow
+## Development Workflow
 Initial Setup and Testing:
 The FPGA board is tested with a simple LED blinking program to confirm correct power supply, programming, and GPIO mapping. This acts as a baseline hardware check.
 
@@ -247,11 +247,11 @@ A character buffer or simple FIFO is used to accumulate incoming bytes. A patter
 Control and Output Logic:
 Based on the decoded commands, the system activates or deactivates the connected output devices. Each command results in a change in the output GPIO lines, effectively controlling the physical components in real time.
 
-## Task6:FPGA-Based UART-Controlled Actuator System
-# Overview:
+# Task6:FPGA-Based UART-Controlled Actuator System
+## Overview:
 Design a solution in which the FPGA interprets UART-based control inputs to manage LED operation. The focus is on decoding serial inputs into direct hardware responses.
 
-# Working:
+## Working:
 Three separate LEDs are controlled based on UART instructions.
 Commands are issued using DOCKLIGHT.
 Upon receiving each command through UART, the FPGA activates the LEDs sequentially — each command turns on a different LED in order.
@@ -262,10 +262,10 @@ codes:
 [uart_trx](./Task6/uart_trx.v)
 Implementation
 [video](./Task6/actuator.mp4)
-## FPGA-Based UART-Controlled Display System
-# Overview:
+# FPGA-Based UART-Controlled Display System
+## Overview:
 Create a system where the FPGA accepts data through a UART interface and outputs it on a display device such as a 7-segment or LCD screen. The project highlights the ability to capture and visualize data in real-time.
-# Working:
+## Working:
 A 7-segment display is interfaced with the FPGA board.
 The FPGA receives input commands from the DOCKLIGHT terminal software.
 As data is transmitted via UART, the display updates by incrementing the shown number with each received command.
