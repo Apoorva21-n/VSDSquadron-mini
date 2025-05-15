@@ -146,7 +146,7 @@ check whether u get series of d
 [transmitted](./Task3/transmitted)
 
 
-## Task5:Theme 1: FPGA-Based UART-Controlled Display System
+### Task5:Theme 1: FPGA-Based UART-Controlled Display System
 # Project Summary
 This project is centered around creating a system that captures serial data in real time through UART communication and displays it on an output module like a 7-segment display or an LCD. The design will be implemented on an FPGA, with the primary goals being robust UART data reception, efficient decoding of the input, and real-time display updates.
 
