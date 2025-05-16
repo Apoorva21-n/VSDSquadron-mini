@@ -167,7 +167,7 @@ IoT edge devices
 [blockdiagram](./Task4/blockdiagram1.jpeg)
 [ckt](./Task4/ckt.jpeg)
 ### result
-[output](./Task4/outputjpeg)
+[output](./Task4/output.jpeg)
 [video](./Task4/video2.mp4)
 
 # Task5:Theme 1: FPGA-Based UART-Controlled Display System
@@ -282,6 +282,4 @@ As data is transmitted via UART, the display updates by incrementing the shown n
 [pcf file ](./Task6/constraints.pcf)
 Implementation
 [video](./Task6/sevensegment.mp4)
-
-
 
