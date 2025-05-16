@@ -120,16 +120,16 @@ for this i have used docklight
 # Task3:Develop a UART transmitter module capable of sending serial data from the FPGA to an external device
 
 ### step1:Study the Existing Code
-[code](./Task3/code)
+[code](./Task%203/code)
 
 ### step2:Design Documentation
-[blockdiagram](./Task3/blockdiagram.jpeg)
-[cktdiagram](./Task3/cktdiagram.jpeg)
+[blockdiagram](./Task%203/blockdiagram.jpeg)
+[cktdiagram](./Task%203/cktdiagram.jpeg)
 
 ### step3:Implementation
-[Makefile](./Task3/Makefile)
-[top](./Task3/top.v)
-[uart_tx](./Task3/uart_tx)
+[Makefile](./Task%203/Makefile)
+[top](./Task%203/top.v)
+[uart_tx](./Task%203/uart_tx)
 cd uart _transmission
 make build
 sudo make flash 
@@ -137,13 +137,13 @@ sudo make flash
 open and install putty
 check whether u get series of d
 [putty terminal](./Task%203/putty%20terminal.jpeg)
-[video1.mp4](./Task3/video1.mp4)
+[video1.mp4](./Task%203/video1.mp4)
 ### step5: Documentation
-[blockdiagram](./Task3/blockdiagram.jpeg)
-[cktdiagram](./Task3/cktdiagram.jpeg)
-[putty terminal](./Task3/putty%20terminal.jpeg)
-[video1.mp4](./Task3/video1.mp4)
-[transmitted](./Task3/transmitted.jpeg)
+[blockdiagram](./Task%203/blockdiagram.jpeg)
+[cktdiagram](./Task%203/cktdiagram.jpeg)
+[putty terminal](./Task%203/putty%20terminal.jpeg)
+[video1.mp4](./Task%203/video1.mp4)
+[transmitted](./Task%203/transmitted.jpeg)
 
 # Task4: UART-Based Sensor Data Transmission Using FPGA
 
@@ -157,18 +157,18 @@ A sensor interface module that reads data from the connected sensor.
 A UART transmitter module that serializes the sensor data and transmits it asynchronously.
 An optional baud rate generator to ensure accurate UART timing.
 Once the system is programmed onto the FPGA, real-time sensor data is continuously or conditionally transmitted to an external device such as a PC, where it can be viewed using terminal software (e.g., Docklight or PuTTY).
-[code](./Task4/code)
-[putty](./Task4/putty%20terminal1.jpeg)
+[code](./Task%204/code)
+[putty](./Task%204/putty%20terminal1.jpeg)
  ### Applications
 Real-time environmental monitoring (temperature, humidity, etc.)
 Industrial sensor networks
 Data logging systems
 IoT edge devices
-[blockdiagram](./Task4/blockdiagram1.jpeg)
-[ckt](./Task4/ckt.jpeg)
+[blockdiagram](./Task%204/blockdiagram1.jpeg)
+[ckt](./Task%204/ckt.jpeg)
 ### result
-[output](./Task4/output.jpeg)
-[video](./Task4/video2.mp4)
+[output](./Task%204/output.jpeg)
+[video](./Task%204/video2.mp4)
 
 # Task5:Theme 1: FPGA-Based UART-Controlled Display System
 ### Project Summary
