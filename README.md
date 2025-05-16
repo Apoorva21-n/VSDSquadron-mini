@@ -283,7 +283,7 @@ As data is transmitted via UART, the display updates by incrementing the shown n
 [seven_seg_decoder](./Task6/seven_seg_decoder.v)
 [pcf file ](./Task6/constraints.pcf)
 block diagram:
-[blockdiagram](./Task6/sevensegment.jpeg)
+[blockdiagram](./Task6/segment.jpeg)
 Implementation
 [video](./Task6/sevensegment.mp4)
 
