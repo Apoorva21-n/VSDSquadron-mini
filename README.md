@@ -266,6 +266,8 @@ codes:
 [pcf file ](./Task6/ledconstraints.pcf)
 [top.v](./Task6/ledtop.v)
 [uart_trx](./Task6/uart_trx.v)
+block diagram:
+[blockdiagram](./Task6/Actuator.jpeg)
 Implementation
 [video](./Task6/actuator.mp4)
 ## FPGA-Based UART-Controlled Display System
@@ -280,6 +282,8 @@ As data is transmitted via UART, the display updates by incrementing the shown n
 [uart_rx](./Task6/uart_rx%20.v)
 [seven_seg_decoder](./Task6/seven_seg_decoder.v)
 [pcf file ](./Task6/constraints.pcf)
+block diagram:
+[blockdiagram](./Task6/sevensegment.jpeg)
 Implementation
 [video](./Task6/sevensegment.mp4)
 
