@@ -320,7 +320,7 @@ top_module.v – Top-level module integrating all components
    # Results
    [Makefile](./Task6-new/Makefile)
 [top.v](./Task6-new/top.v)
-[uart_rx](./Task6-new/uart_rx%20.v)
+[uart_rx](./Task6-new/uart_rx.v)
 [seven_seg_decoder](./Task6-new/seven_seg_decoder.v)
 [pcf file ](./Task6-new/constraints.pcf)
    [video](./Task6-new/seven.mp4)
