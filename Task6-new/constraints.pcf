@@ -1,0 +1,23 @@
+# Clock input
+set_io clk 20
+
+# UART RX (matches Verilog name exactly)
+set_io uart_rx_pin 46
+
+# 7-segment segment pins
+set_io seg[0] 2
+set_io seg[1] 3
+set_io seg[2] 4
+set_io seg[3] 6
+set_io seg[4] 9
+set_io seg[5] 10
+set_io seg[6] 11
+
+# Reset (optional)
+set_io rst 13
+
+# Decimal Point (optional)
+set_io dp 12
+
+set_io buzzer 23
+set_io led 47
