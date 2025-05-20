@@ -318,5 +318,10 @@ top_module.v – Top-level module integrating all components
 6. If a critical character (like 'A' or 'G') is received, the buzzer beeps.
 
    # Results
+   [Makefile](./Task6-new/Makefile)
+[top.v](./Task6-new/top.v)
+[uart_rx](./Task6-new/uart_rx%20.v)
+[seven_seg_decoder](./Task6-new/seven_seg_decoder.v)
+[pcf file ](./Task6-new/constraints.pcf)
    [video](./Task6-new/seven.mp4)
 
