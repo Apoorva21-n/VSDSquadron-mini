@@ -323,5 +323,5 @@ top_module.v – Top-level module integrating all components
 [uart_rx](./Task6-new/uart_rx.v)
 [seven_seg_decoder](./Task6-new/seven_seg_decoder.v)
 [pcf file ](./Task6-new/constraints.pcf)
-   [video](./Task6-new/seven.mp4)
+   [video](./Task6-new/seven1.mp4)
 
